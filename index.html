@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XT</title>
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: linear-gradient(135deg, #004540, #F06347);
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 40px 0;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            background: #ff4500;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .hero button:hover {
+            background: #e03e00;
+        }
+
+        .hero img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            flex: 1 1 30%;
+            margin: 10px;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        .specs {
+            margin-top: 20px;
+            width: 100%;
+            border-spacing: 0;
+            border-collapse: separate;
+        }
+
+        .specs th, .specs td {
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        .specs th {
+            background-color: #f9f9f9;
+            border-bottom: 2px solid #e5e5e5;
+            font-weight: bold;
+        }
+
+        .specs td {
+            border-bottom: 1px solid #e5e5e5;
+            color: #555;
+        }
+
+        .specs tr:nth-child(even) td {
+            background-color: #fafafa;
+        }
+
+        .specs tr:hover td {
+            background-color: #f1f1f1;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #ff6347;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a>Родні Кнап</a>
+                </div>
+                <div class="nav-links">
+                    <a href="#spec">Специфікація</a>
+                    <a href="#doc">Документація</a>
+                    <a href="#contact">Код</a>
+                </div>
+            </nav>
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>8088 XT Turbo</h1>
+                    <p>100 x 100 mm (ATX)</p>
+                    <button onclick="location.href='https://github.com/5ht/zx'" type="button">Github</button>
+                </div>
+                <div class="hero-image">
+                    <img width=300 src="assets/xt.jpg" style="padding: 10px 10px 10px 10px;background-color:#EEEEEE;">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+    <section id="intro" class="container">
+            <h2><a name="spec">Відтворення XT на сучасних компонентах</a></h2>
+       <p>Сучасний комп'ютер на основі процесора 8088 з підтримкою SCSI на основі контролера NCR 53C400.</p>
+    </section>
+    <section id="specifications" class="container">
+            <h2><a name="spec">Специфікація</a></h2>
+            <table class="specs">
+                <tr>
+                    <th>Процесор:</th>
+                    <td>Intel 8088, Intel 8087.</td>
+                </tr>
+                <tr>
+                    <th>Пам'ять:</th>
+                    <td>1MB SRAM, 128KB ROM.</td>
+                </tr>
+                <tr>
+                    <th>Шина:</th>
+                    <td>ISA 8-bit, фізично сумісна з 16-бітними картами.</td>
+                </tr>
+                <tr>
+                    <th>Осцилятор:</th>
+                    <td>14,31818 MHz.</td>
+                </tr>
+                <tr>
+                    <th>Графіка:</th>
+                    <td>VGA.</td>
+                </tr>
+                <tr>
+                    <th>Звук:</th>
+                    <td>Відсутній. Зовнішнє підключення (AY-3-8912).</td>
+                </tr>
+                <tr>
+                    <th>Клавіатура:</th>
+                    <td>XT.</td>
+                </tr>
+            </table>
+        </section>
+    <section id="specifications" class="container">
+            <h2><a name="doc">Документація</a></h2>
+    </section>
+    <section id="specifications" class="container">
+            <h2><a name="doc">Код</a></h2>
+    </section>
+</main>
+<footer>
+    <p> 2024 &copy; KS GROUP. All rights reserved.</p>
+</footer>
+</body>
+</html>
+
